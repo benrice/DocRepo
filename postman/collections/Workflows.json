@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "436e995f-95b0-49bc-829f-695e6e9f0e00",
+		"name": "Workflows",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "26510940-436e995f-95b0-49bc-829f-695e6e9f0e00"
+	},
+	"item": [
+		{
+			"name": "Hello",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4862b09b-0d5e-4f9b-b34c-6dc0a94c7c22",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "cc69daf7-837c-45c2-aa23-6f642651c12b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Name\": $\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hooks.slack.com/workflows/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",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"slack",
+						"com"
+					],
+					"path": [
+						"workflows",
+						"T04L7HNBB",
+						"A04V8KL18CA",
+						"452968573602632780",
+						"B1UM0pr91fAaDGHHtN08PTvv"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
